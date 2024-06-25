@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(to bottom, #8B0000, #B22222);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: absolute;
+    bottom: -10%;
+    width: 50px;
+    height: 50px;
+    background: url('https://image.shutterstock.com/image-vector/red-heart-icon-isolated-on-260nw-1509426426.jpg');
+    background-size: cover;
+    animation: float 10s infinite;
+    opacity: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
